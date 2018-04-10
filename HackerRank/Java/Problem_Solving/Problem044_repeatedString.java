@@ -5,7 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-import org.apache.commons.lang3.StringUtils; // TODO: download jar or config maven
+import org.apache.commons.lang3.StringUtils;
 
 public class Problem044_repeatedString {
 

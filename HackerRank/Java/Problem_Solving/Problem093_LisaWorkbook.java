@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 public class Problem093_LisaWorkbook {
 
+	// CREDITS : https://www.hackerrank.com/jnrdn0011?hr_r=1
     static int workbook(int n, int k, int[] arr) {
         int page = 1;
         int count = 0;
