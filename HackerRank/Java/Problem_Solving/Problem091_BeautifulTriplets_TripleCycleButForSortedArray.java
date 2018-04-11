@@ -3,7 +3,6 @@ package hackerRank_JavaProblemSolving;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Problem091_BeautifulTriplets_TripleCycleButForSortedArray {
@@ -11,10 +10,9 @@ public class Problem091_BeautifulTriplets_TripleCycleButForSortedArray {
 	// IDEA 1 : The given array is sorted
 	// IDEA 2 : Playing with indexes and break to quit array indexing and shift for another one
     static int beautifulTriplets(int d, int[] a, int size) {
-        Arrays.sort(a);
         int counter = 0;
-        for (int i = 0; i < size; i++) {
-            for (int j = i+1; j < size; j++) {
+        for (int i = 0; i < size-2; i++) {
+            for (int j = i+1; j < size-1; j++) {
                 if ( a[j] - a[i] > d ) {
                     break;
                 }
@@ -32,7 +30,7 @@ public class Problem091_BeautifulTriplets_TripleCycleButForSortedArray {
             }
         }
         return counter;
-    }
+    } // beautifulTriplets
 
     private static final Scanner scanner = new Scanner(System.in);
 

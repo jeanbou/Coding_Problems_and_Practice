@@ -28,7 +28,8 @@ public class Problem059_QueenAttack2_Optimal_andNotOptimalMulthredingPlusDirtySo
     } // searchTwoValues
     
     // 3 non used procedure that might be the source of optimal solution
-    private static int findEastYForGivenXYtSortedMatrix(int[][] matSorted, int x, int y, int k, int n) {
+    @SuppressWarnings("unused")
+	private static int findEastYForGivenXYtSortedMatrix(int[][] matSorted, int x, int y, int k, int n) {
         for (int i = 0; i < k; i++) {
             if (matSorted[i][0] > x) {
                 break;
@@ -41,7 +42,8 @@ public class Problem059_QueenAttack2_Optimal_andNotOptimalMulthredingPlusDirtySo
         return n+1; // no blocking on the east, the edge of the board
     }
     
-    private static int findWestYForGivenXYtSortedMatrix(int[][] matSorted, int x, int y, int k, int n) {
+    @SuppressWarnings("unused")
+	private static int findWestYForGivenXYtSortedMatrix(int[][] matSorted, int x, int y, int k, int n) {
         int westY = Integer.MIN_VALUE;
         for (int i = 0; i < k; i++) {
             if (matSorted[i][0] > x) {
@@ -58,7 +60,8 @@ public class Problem059_QueenAttack2_Optimal_andNotOptimalMulthredingPlusDirtySo
         return westY; 
     }
     
-    private static int findNorthXForGivenXYtSortedMatrix(int[][] matSorted, int x, int y, int k, int n) {
+    @SuppressWarnings("unused")
+	private static int findNorthXForGivenXYtSortedMatrix(int[][] matSorted, int x, int y, int k, int n) {
         int northY = Integer.MAX_VALUE;
         for (int i = 0; i < k; i++) {
             if (matSorted[i][0] > x) {
@@ -356,7 +359,8 @@ public static void main(String[] args) throws IOException, InterruptedException,
         int rBRObstacle = -1;
         int cBRObstacle = -1;
         int rBObstacle = -1;
-        int cBObstacle = -1;
+        @SuppressWarnings("unused")
+		int cBObstacle = -1;
         int rBLObstacle = -1;
         int cBLObstacle = -1;
         int rLObstacle = -1;
@@ -364,7 +368,8 @@ public static void main(String[] args) throws IOException, InterruptedException,
         int rTLObstacle = -1;
         int cTLObstacle = -1;
         int rTObstacle = -1;
-        int cTObstacle = -1;
+        @SuppressWarnings("unused")
+		int cTObstacle = -1;
         int rTRObstacle = -1;
         int cTRObstacle = -1;
         
