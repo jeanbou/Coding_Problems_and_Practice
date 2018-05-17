@@ -23,17 +23,17 @@ class Day015_LinkedList_InsertionFunct_withRun2the_end_ofList {
         // note sure about more efficient solution
         // CREDITS : https://stackoverflow.com/questions/32625964/insert-node-at-the-end-of-linked-list
         
-        Node newNode = new Node(d);
-        if (head == null) {
-            return newNode;
-        }
-        Node current = head; 
-        while (current.next != null) {
-            current = current.next;
-        }
-        current.next = newNode;
-        return head;
-    }
+        	Node newNode = new Node(d);
+        	if (head == null) {
+            		return newNode;
+        	}
+        	Node current = head; 
+        	while (current.next != null) {
+            		current = current.next;
+        	}
+        	current.next = newNode;
+        	return head;
+    	}
 	
 	public static void display(Node head) {
         Node start = head;
