@@ -11,7 +11,7 @@ class Node {
     }
 }
 
-class Days015_LinkedList_InsertionFunct_withRun2the_end_ofList {
+class Day015_LinkedList_InsertionFunct_withRun2the_end_ofList {
 
 	public static  Node insert(Node head,int d) {
         
