@@ -10,7 +10,7 @@ public class Day007_Arrays {
         int n = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
-        // Protective pqrt of code
+        // Protective part of code
         if (n <= 0 ) {
 				throw new IllegalArgumentException(" Check Arguments Exception : Input : n = "+Integer.toString(n)+" !\nOut of specified range");
 		}
