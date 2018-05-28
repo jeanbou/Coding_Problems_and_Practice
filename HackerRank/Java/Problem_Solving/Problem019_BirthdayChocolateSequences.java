@@ -52,6 +52,6 @@ public class Problem019_BirthdayChocolateSequences {
 
         bufferedWriter.close();
 
-        scanner.close();
+        scanner.close();	
     }
 }
