@@ -13,7 +13,7 @@ public class Problem099_Manasa_andStones_UniqueSetSolutionOfLinearCombination {
     static int[] stones(int n, int a, int b) {
         Set<Integer> uniqueCombination = new HashSet<Integer>(); // Unique combination of linear sum that contains of all possible results 
         for ( int i = 0; i < n; i++) {
-            uniqueCombination.add(b*i+a*(n-i-1));
+            uniqueCombination.add(b*i+a*(n-i-1)); // TODO: Because the array must be in sorted order, the optimal solution will be to keep array sorted at the begining and then do sorted like insertion
         }
         int[] res = uniqueCombination.stream().mapToInt(Number::intValue).toArray();
         Arrays.sort(res);
