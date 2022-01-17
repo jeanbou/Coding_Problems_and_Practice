@@ -1,0 +1,2 @@
+-- Hint: The first search for the removing 0 in SQL gives me this link on https://stackoverflow.com/questions/35613341/removing-zeros-from-number/35613382#:~:text=SELECT%20CEIL((AVG(salary,to%20remove%200%20from%20salary.
+SELECT CEIL((AVG(salary)) - (AVG(REPLACE(salary, '0', '')))) AS avg_salary FROM employees;
